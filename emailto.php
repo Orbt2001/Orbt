@@ -1,6 +1,6 @@
 <?php
 // var_dump($_POST['p2']);
-$to      = 'atendimento@orbt.com.br';
+$to      = 'orbt2001@gmail.com';
 $subject = '[CONTATO] '.$_POST['p3'];
 $html = "
 <html>
