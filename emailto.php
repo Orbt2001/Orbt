@@ -21,5 +21,5 @@
         'Content-type: text/html; charset=UTF-8';
 
     $ret = mail('gabriellb438@gmail.com', '$subject',"TESTE EMAIL");
-    return ($ret);
+    return true;
 ?>
