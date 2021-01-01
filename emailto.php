@@ -1,7 +1,6 @@
 <?php
 // var_dump($_POST['p2']);
 $to = 'orbt2001@gmail.com';
-var_dump("EMAIL".$to);
 $subject = '[CONTATO] '.$_POST['p3'];
 $html = "
 <html>
@@ -19,8 +18,8 @@ $html = "
 </body>
 </html>";
 $headers = 'From: '.$_POST['p2'].'\r\n'.
-    'Content-type: text/html; charset=iso-8859-1rn'.
-    'X-Mailer: PHP/' . phpversion();
+    'Content-type: text/html; charset=UTF-8';
 
 $ret = mail($to, $subject, $html, $headers);
+return $ret;
 ?>

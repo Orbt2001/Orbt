@@ -334,12 +334,20 @@ Cupom Promocional:">
 				p3: $("#subject").val(),
 				p4: $("#mensagem").val(),
 			},
-			success: function() {
-				Swal.fire({
-					icon: 'success',
-					title: 'Sucesso',
-					text: 'Ficamos gratos pelo seu contato, retornaremos em breve!',
-				})
+			success: function(ok) {
+				if(ok){
+					Swal.fire({
+						icon: 'success',
+						title: 'Sucesso',
+						text: 'Ficamos gratos pelo seu contato, retornaremos em breve!',
+					})
+				}else{
+					Swal.fire({
+						icon: 'error',
+						title: 'Erro',
+						text: 'Não conseguimos enviar o seu contato, tente novamente!',
+					})
+				}
 			},
 		});
 	});
