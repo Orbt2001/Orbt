@@ -22,5 +22,5 @@ $headers = 'From: '.$_POST['p2'].'\r\n'.
     'X-Mailer: PHP/' . phpversion();
 
 $ret = mail($to, $subject, $html, $headers);
-var_dump($ret);
+return ($to);
 ?>
