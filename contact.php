@@ -131,7 +131,7 @@ Cupom Promocional:">
               </div>
             </div>
             <div class="form-group mt-3">
-              <button id="enviarEmail" class="button button-contactForm" >Enviar</button>
+              <button id="enviarEmail" type="button" class="button button-contactForm" >Enviar</button>
             </div>
           </form>
 
