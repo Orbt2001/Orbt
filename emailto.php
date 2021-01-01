@@ -1,8 +1,5 @@
 <?php
-// var_dump($_POST['p2']);
-if($_POST['p1']==''||$_POST['p2']==''||$_POST['p3']=''||$_POST['p4']==''){
-    return false;
-}else{
+
     $to = 'orbt2001@gmail.com';
     $subject = '[CONTATO] '.$_POST['p3'];
     $html = "
@@ -25,5 +22,4 @@ if($_POST['p1']==''||$_POST['p2']==''||$_POST['p3']=''||$_POST['p4']==''){
 
     $ret = mail($to, $subject, $html, $headers);
     return $ret;
-}
 ?>
