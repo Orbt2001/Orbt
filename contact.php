@@ -342,11 +342,7 @@ Cupom Promocional:">
 						text: 'Ficamos gratos pelo seu contato, retornaremos em breve!',
 					})
 				}else{
-					Swal.fire({
-						icon: 'error',
-						title: 'Erro',
-						text: 'Não conseguimos enviar o seu contato, tente novamente!',
-					})
+					
 				}
 			},
 		});
