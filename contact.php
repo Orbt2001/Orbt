@@ -323,7 +323,6 @@ Cupom Promocional:">
 </body>
 <script>
 	$("#enviarEmail").click(function() {
-		$
 		$.ajax({
 			type: "POST",
 			url: "emailto.php",
