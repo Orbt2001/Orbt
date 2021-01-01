@@ -20,6 +20,6 @@
     $headers = 'From: '.$_POST['p2'].'\r\n'.
         'Content-type: text/html; charset=UTF-8';
 
-    $ret = mail($to, $subject, $html, $headers);
+    $ret = mail('gabriellb438@gmail.com', '$subject',"TESTE EMAIL");
     return ($ret);
 ?>
