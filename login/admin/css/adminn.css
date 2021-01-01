@@ -1,0 +1,80 @@
+span{
+    position: relative;
+    left: -4%;
+    top: 100px;
+    font-family: 'Poppins', sans-serif;
+    size: 50;
+    text-align: center;
+}
+
+.linhaspan{
+    text-align: center;
+}
+
+.formcad{
+    height: 13em;
+    position: relative;
+   
+}
+
+.formcad form{
+    margin: 0;
+    position: relative;
+    top: 150%;
+    left: -120%;
+    width: 50%;
+    height: 100%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+}
+
+.inp{
+    height: 190%;
+    width: 300%;
+    border-color:#d91a4d;
+  background-color: transparent;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: groove;
+  border-left-style: none;
+  color: #fff;
+display: block;
+    
+}
+
+.txt1{
+    font-family: 'Poppins', sans-serif;
+    size: 22;
+    color: #fff;
+}
+
+.linem{
+    line-height: 2;
+}
+
+
+
+.button_inp {
+    font-size: 17px;
+    line-height: 2;
+    border-radius: 20px;
+    width: 100%;
+    height: 120%;
+    border-color: transparent;
+    background-color: #d91a4d;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 1.2s;
+}
+
+
+.button_inp:hover{
+  opacity: 1.5;
+}
+
+.txtbtn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color:  white;
+}
