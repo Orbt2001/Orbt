@@ -131,7 +131,7 @@ Cupom Promocional:">
               </div>
             </div>
             <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm" >Enviar
+              <button type="submit" id="enviarEmail" class="button button-contactForm" >Enviar
               </button>
             </div>
           </form>
@@ -320,4 +320,26 @@ Cupom Promocional:">
 <script src="js/mail-script.js"></script>
 <script src="js/theme.js"></script>
 </body>
+<script>
+	$("#enviarEmail").click(function() {
+		$
+		$.ajax({
+			type: "POST",
+			url: "emailto.php",
+			data: {
+				p1: $("#name").val(),
+				p2: $("#email").val(),
+				p3: $("#subject").val(),
+				p4: $("#mensagem").val(),
+			},
+			success: function() {
+				Swal.fire({
+					icon: 'success',
+					title: 'Sucesso',
+					text: 'Ficamos gratos pelo seu contato, retornaremos em breve!',
+				})
+			},
+		});
+	});
+</script>
 </html>
