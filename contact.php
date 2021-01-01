@@ -101,7 +101,9 @@
           <h2 class="contact-title">Enviar um orçamento</h2>
         </div>
         <div class="col-lg-8">
-		  <form>
+
+
+          <form class="form-contact contact_form" action="#">
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
@@ -127,11 +129,11 @@ Cupom Promocional:">
                   <input class="form-control" name="assunto" id="subject" type="text" placeholder="Titulo">
                 </div>
               </div>
-			  <div class="form-group mt-3">
-				  <button type="button" id="enviarEmail" class="button button-contactForm" >Enviar
-					  </button>
-					</div>
-				</div>
+            </div>
+            <div class="form-group mt-3">
+              <button id="enviarEmail" class="button button-contactForm" >Enviar</button>
+            </div>
+          </form>
 
 
         </div>
