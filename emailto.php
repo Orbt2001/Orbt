@@ -1,6 +1,6 @@
 <?php
 
-    $to = 'orbt2001@gmail.com';
+    $to = 'gabriellb438@gmail.com';
     $subject = '[CONTATO] '.$_POST['p3'];
     $html = "
     <html>
@@ -21,6 +21,5 @@
         'Content-type: text/html; charset=UTF-8';
 
     $ret = mail($to, $subject, $html, $headers);
-    var_dump($ret);
     return $ret;
 ?>
