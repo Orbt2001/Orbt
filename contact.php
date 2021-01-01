@@ -258,7 +258,7 @@ Cupom Promocional:">
                       <ul>
                           <li><a href="#">Inicio</a></li>
                           <li><a href="#">Trabalhos</a></li>
-                          <li><a href="#">Preços</a></li>
+                          <li><a href="#">Preasdços</a></li>
                           <li><a href="#">Contato</a></li>
                       </ul>
                   </div>
