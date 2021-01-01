@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b442e5cbd5.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
    
 
 </head>

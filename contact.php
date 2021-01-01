@@ -319,6 +319,7 @@ Cupom Promocional:">
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/mail-script.js"></script>
 <script src="js/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 <script>
 	$("#enviarEmail").click(function() {
