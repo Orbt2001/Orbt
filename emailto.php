@@ -1,6 +1,7 @@
 <?php
 // var_dump($_POST['p2']);
 $to = 'orbt2001@gmail.com';
+var_dump("EMAIL".$to);
 $subject = '[CONTATO] '.$_POST['p3'];
 $html = "
 <html>
@@ -22,5 +23,4 @@ $headers = 'From: '.$_POST['p2'].'\r\n'.
     'X-Mailer: PHP/' . phpversion();
 
 $ret = mail($to, $subject, $html, $headers);
-return ($to);
 ?>
