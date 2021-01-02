@@ -330,10 +330,10 @@ Cupom Promocional:">
 			type: "POST",
 			url: "emailto.php",
 			data: {
-				t1: $("#name").val(),
-				t2: $("#email").val(),
-				t3: $("#subject").val(),
-				t4: $("#mensagem").val(),
+				p1: $("#name").val(),
+				p2: $("#email").val(),
+				p3: $("#subject").val(),
+				p4: $("#mensagem").val(),
 			},
 			success: function(ok) {
 				if(ok){
@@ -343,7 +343,11 @@ Cupom Promocional:">
 						text: 'Ficamos gratos pelo seu contato, retornaremos em breve!',
 					})
 				}else{
-					
+					Swal.fire({
+						icon: 'erro',
+						title: 'Error',
+						text: 'Não foi possivel assimilar seus dados, tente mais tarde!',
+					})
 				}
 			},
 		});

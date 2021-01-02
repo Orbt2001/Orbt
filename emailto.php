@@ -1,7 +1,7 @@
 <?php
 
     $to = 'orbt2001@gmail.com';
-    $subject = '[CONTATO] '.$_POST['t3'];
+    $subject = '[CONTATO] '.$_POST['p3'];
     $html = "
     <html>
     <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
@@ -9,8 +9,8 @@
     </div>
 
      <div style='text-align:center; margin: 50px 10px;'>
-    ".$_POST['t1']." entrou em contato através do site:".$_POST['t4']."
-    Email para contato:".$_POST['t2']."
+    ".$_POST['p1']." entrou em contato através do site:".$_POST['p4']."
+    Email para contato:".$_POST['p2']."
     </div>
 
 <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
@@ -18,7 +18,7 @@
 </div>
 </html>";
         
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$headers = "Content-type: text/html; charset=iso-8859-1";
 
     mail($to, $subject, $html, $headers);
     return true;
