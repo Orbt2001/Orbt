@@ -23,6 +23,6 @@ $html = "
 $headers = 'Content-Type: text/html; charset=utf-8';
 
 
-mail($to, $subject, $html, $headers);
+mail($to, $subject, $html);
 return true;
 ?>
