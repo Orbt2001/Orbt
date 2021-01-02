@@ -343,11 +343,7 @@ Cupom Promocional:">
 						text: 'Ficamos gratos pelo seu contato, retornaremos em breve!',
 					})
 				}else{
-					Swal.fire({
-						icon: 'erro',
-						title: 'Error',
-						text: 'Não foi possivel assimilar seus dados, tente mais tarde!',
-					})
+          
 				}
 			},
 		});
