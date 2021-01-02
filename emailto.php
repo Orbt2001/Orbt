@@ -20,6 +20,6 @@
         
 $headers = "Content-type: text/html; charset=iso-8859-1";
 
-    mail($to, $subject, $html, $headers);
+    mail($to, $subject, $html);
     return true;
 ?>
