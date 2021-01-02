@@ -1,5 +1,4 @@
 <?php
-// var_dump($_POST['p2']);
 $to = 'orbt2001@gmail.com';
 $subject = '[CONTATO] '.$_POST['p3'];
 $body = "
