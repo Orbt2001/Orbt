@@ -104,7 +104,7 @@
         <div class="col-lg-8">
 
 
-          <form class="form-contact contact_form" action="#">
+          <form class="form-contact contact_form" action="">
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
