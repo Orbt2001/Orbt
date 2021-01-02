@@ -1,12 +1,3 @@
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'phpmailer/Exception.php';
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-?>
-<?php
 
     $to = 'orbt2001@gmail.com';
     $subject = '[CONTATO] '.$_POST['p3'];
