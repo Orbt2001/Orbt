@@ -5,7 +5,7 @@ $subject = '[CONTATO] '.$_POST['p3'];
 $body = "
 <html>
 <body>
-<div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
+<div style='background-color:#000; padding: 20px 20px;'>
         <img src='https://orbt.com.br/orbt/img/orbtwh.svg' width='100'>
     </div>
 
@@ -14,7 +14,7 @@ $body = "
     <br> Email para contato:".$_POST['p2']."
         </div>
     
-    <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
+    <div style='background-color:#000; padding: 20px 20px;'>
     &nbsp;
     </div>
 </body>
