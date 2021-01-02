@@ -325,6 +325,13 @@ Cupom Promocional:">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
 	$("#enviarEmail").click(function() {
+    if($("#name").val()==''||$("#name").val()==null,$("#email").val()==''||$("#email").val()==null,$("#subject").val()==''||$("#subject").val()==null,$("#mensagem").val()==''||$("#mensagem").val()==null){
+      Swal.fire({
+						icon: 'error',
+						title: 'Oops...',
+						text: 'Preencha todos os campos para enviar seu contato!',
+					})
+    }else{
 		$.ajax({
 			type: "POST",
 			url: "enviarmail.php",
@@ -345,11 +352,12 @@ Cupom Promocional:">
           Swal.fire({
 						icon: 'error',
 						title: 'Oops...',
-						text: 'Preencha todos os dados ou tente novamente!',
+						text: 'Ocorreu um erro ao enviar o email, tente novamente!',
 					})
 				}
 			},
 		});
+    }
 	});
 </script>
 </body>

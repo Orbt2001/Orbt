@@ -1,8 +1,5 @@
 <?php
 // var_dump($_POST['p2']);
-if($_POST['p1']==''||$_POST['p2']==''||$_POST['p3']==''||$_POST['p4']==''){
-    echo 0;
-}else{
     $to = 'atendimento@orbt.com.br';
     $subject = '[CONTATO] '.$_POST['p3'];
     $body = "
@@ -29,5 +26,4 @@ if($_POST['p1']==''||$_POST['p2']==''||$_POST['p3']==''||$_POST['p4']==''){
     
     $ret = mail($to, $subject, $body, $headers);
     echo $ret;
-}
 ?>
