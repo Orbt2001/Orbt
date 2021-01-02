@@ -18,6 +18,6 @@
         </html>";
     $headers = 'From: '.$_POST['p2'].'\r\n'.'Content-type: text/html; charset=UTF-8';
 
-    mail($to,$subject,$body,$headers);
+    mail($to, $subject, $body);
     return true;
 ?>
