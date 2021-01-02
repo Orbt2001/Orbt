@@ -2,7 +2,7 @@
 // var_dump($_POST['p2']);
 $to = 'orbt2001@gmail.com';
 $subject = '[CONTATO] '.$_POST['p3'];
-$html = "
+$body = "
 <html>
 <body>
 <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
@@ -23,6 +23,6 @@ $html = "
 $headers = 'Content-Type: text/html; charset=utf-8';
 
 
-mail($to, $subject, $headers);
+mail($to, $subject, $body);
 return true;
 ?>
