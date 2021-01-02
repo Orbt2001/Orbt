@@ -316,11 +316,8 @@ Cupom Promocional:">
 <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 <script src="js/jquery.ajaxchimp.min.js"></script>
 <script src="js/waypoints.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/contact.js"></script>
 <script src="js/jquery.form.js"></script>
 <script src="js/jquery.validate.min.js"></script>
-<script src="js/mail-script.js"></script>
 <script src="js/theme.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
@@ -328,7 +325,7 @@ Cupom Promocional:">
 	$("#enviarEmail").click(function() {
 		$.ajax({
 			type: "POST",
-			url: "emailto.php",
+			url: "enviarmail.php",
 			data: {
 				p1: $("#name").val(),
 				p2: $("#email").val(),
@@ -343,7 +340,7 @@ Cupom Promocional:">
 						text: 'Ficamos gratos pelo seu contato, retornaremos em breve!',
 					})
 				}else{
-          
+
 				}
 			},
 		});
