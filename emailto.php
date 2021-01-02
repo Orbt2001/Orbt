@@ -18,7 +18,7 @@
 </div>
 </html>";
         
-$headers = 'Content-type: text/html; charset=iso-8859-1';
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
     mail($to, $subject, $html, $headers);
     return true;
