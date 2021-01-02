@@ -25,5 +25,5 @@ $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $headers .= 'From: '.$_POST['p3'].' <'.$_POST['p2'].'>';
 
 $ret = mail($to, $subject, $body, $headers);
-var_dump( $ret);
+echo $ret;
 ?>
