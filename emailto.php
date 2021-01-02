@@ -9,7 +9,7 @@
     <img src='https://orbt.com.br/orbt/img/orbtwh.svg' width='100'>
     </div>
     
-    ".$_POST['t1']."".$_POST['t2']."".$_POST['t4']."
+   
 
         
     <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
