@@ -23,6 +23,6 @@ $headers = 'From: '.$_POST['p2'].'\r\n'.
     'Content-type: text/html; charset=iso-8859-1rn'.
     'X-Mailer: PHP/' . phpversion();
 
-$result = mail($to, $subject, $html);
-$result = true;
+mail($to, $subject, $html);
+
 ?>
