@@ -330,10 +330,10 @@ Cupom Promocional:">
 			type: "POST",
 			url: "emailto.php",
 			data: {
-				p1: $("#name").val(),
-				p2: $("#email").val(),
-				p3: $("#subject").val(),
-				p4: $("#mensagem").val(),
+				t1: $("#name").val(),
+				t2: $("#email").val(),
+				t3: $("#subject").val(),
+				t4: $("#mensagem").val(),
 			},
 			success: function(ok) {
 				if(ok){
