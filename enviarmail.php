@@ -6,21 +6,23 @@ $html = "
 <html>
 <body>
 <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
-	<img src='https://orbt.com.br/indesfer/img/logo.png' width='100'>
-</div>
+        <img src='https://orbt.com.br/orbt/img/orbtwh.svg' width='100'>
+    </div>
 
-
-
-<div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
-&nbsp;
-</div>
+    <div style='text-align:center; margin: 50px 10px;'>
+    ".$_POST['p1']." entrou em contato através do site: <br>".$_POST['p4']."
+    <br> Email para contato:.$_POST['p2'].
+        </div>
+    
+    <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
+    &nbsp;
+    </div>
 </body>
 </html>";
 
-$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$headers = 'Content-Type: text/html; charset=utf-8';
 
-mail($to, $subject, $html);
+
+mail($to, $subject, $html, $headers);
 
 ?>
