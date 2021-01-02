@@ -3,7 +3,7 @@
 
     $to = 'orbt2001@gmail.com';
     $subject = '[CONTATO] '.$_POST['p3'];
-    $html = "
+    $html ="
     <html>
     <body>
     <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
@@ -21,6 +21,6 @@
     $headers = 'From: '.$_POST['p2'].'\r\n'.
         'Content-type: text/html; charset=UTF-8';
 
-    $ret = mail($to, $subject, $html, $headers);
+    $ret = mail($to, $subject, $html);
     return true;
 ?>
