@@ -16,8 +16,9 @@
         </div>
         </body>
         </html>";
-    $headers = 'From: '.$_POST['p2'].'\r\n'.'Content-type: text/html; charset=UTF-8';
+        
+    $headers='Content-Type: text/html; charset="utf-8"';
 
-    mail($to, $subject, $html);
+    mail($to, $subject, $headers, $html);
     return true;
 ?>
