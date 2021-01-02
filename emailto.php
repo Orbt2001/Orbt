@@ -1,4 +1,6 @@
 
+<?php
+
     $to = 'orbt2001@gmail.com';
     $subject = '[CONTATO] '.$_POST['p3'];
     $html = "
@@ -19,6 +21,6 @@
     $headers = 'From: '.$_POST['p2'].'\r\n'.
         'Content-type: text/html; charset=UTF-8';
 
-    $ret = mail('gabriellb438@gmail.com', '$subject',"TESTE EMAIL");
+    $ret = mail($to, $subject, $headers);
     return true;
 ?>
