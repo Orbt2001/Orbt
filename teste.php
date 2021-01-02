@@ -11,9 +11,9 @@
     </div>
 
     <div style='text-align:center; margin: 50px 10px;'>
-    ".$_POST['p1']." entrou em contato através do site: <br>".$_POST['p4']."
-    <br> Email para contato:".$_POST['p2']."
-    </div>
+    ".$_POST['pt']." entrou em contato através do site: <br>".$_POST['t4']."
+    <br> Email para contato:.$_POST['t2'].
+        </div>
     
     <div style='background-color:rgba(0,0,0,0.5); padding: 20px 20px;'>
     &nbsp;
