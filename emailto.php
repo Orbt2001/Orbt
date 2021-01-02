@@ -8,7 +8,7 @@ require 'phpmailer/SMTP.php';
 ?>
 <?php
 
-    $to = 'gabriellb438@gmail.com';
+    $to = 'orbt2001@gmail.com';
     $subject = '[CONTATO] '.$_POST['p3'];
     $html = "
     <html>
