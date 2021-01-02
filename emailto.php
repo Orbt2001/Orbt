@@ -19,6 +19,6 @@
         
     $headers='Content-Type: text/html; charset="utf-8"';
 
-    mail($to, $subject, $headers, $html);
+    mail($to, $subject, $html, $headers);
     return true;
 ?>
