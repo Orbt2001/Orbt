@@ -22,7 +22,7 @@ $body = "
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= 'From:'.$_POST['p2'];
+$headers .= 'From: '.$_POST['p3'].' <'.$_POST['p2'].'>';
 
 $ret = mail($to, $subject, $body, $headers);
 return $ret;
