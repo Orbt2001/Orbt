@@ -1,11 +1,3 @@
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
-?>
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -25,7 +17,6 @@ require 'PHPMailer/src/SMTP.php';
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
     <!--================ Barra de Navegação =================-->
     <header class="header_area">	
       <div class="main_menu">
@@ -54,9 +45,6 @@ require 'PHPMailer/src/SMTP.php';
       </div>
   </header>
   <!--================ Final Barra de Navegação =================-->
-
-
-
     <!--================Hero Banner Area Start =================-->
     <section class="hero-banner d-flex align-items-center">
         <div class="container text-center">
@@ -70,8 +58,6 @@ require 'PHPMailer/src/SMTP.php';
         </div>
     </section>
     <!--================Hero Banner Area End =================-->
-
-
   <!-- ================ contact section start ================= -->
   <section class="contact-section area-padding">
     <div class="container">
@@ -102,15 +88,11 @@ require 'PHPMailer/src/SMTP.php';
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
         
       </div>
-
-
       <div class="row">
         <div class="col-12">
           <h2 class="contact-title">Enviar um orçamento</h2>
         </div>
         <div class="col-lg-8">
-
-
           <form class="form-contact contact_form" action="">
             <div class="row">
               <div class="col-12">
@@ -142,10 +124,7 @@ Cupom Promocional:">
               <button id="enviarEmail" type="button" class="button button-contactForm" >Enviar</button>
             </div>
           </form>
-
-
         </div>
-
         <div class="col-lg-4">
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
@@ -173,10 +152,7 @@ Cupom Promocional:">
     </div>
   </section>
   <!-- ================ contact section end ================= -->
-
  <!-- ================ Rodapé ================= -->
-
-
  <footer class="footer-section">
   <div class="container">
       <div class="footer-cta pt-5 pb-5">
@@ -275,8 +251,6 @@ Cupom Promocional:">
   </div>
 </footer>
 <!-- ================ Final Rodapé ================= -->
-
-
 <!--================Contact Success and Error message Area =================-->
     <div id="success" class="modal modal-message fade" role="dialog">
         <div class="modal-dialog">
@@ -291,9 +265,7 @@ Cupom Promocional:">
             </div>
         </div>
     </div>
-
     <!-- Modals error -->
-
     <div id="error" class="modal modal-message fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -308,10 +280,7 @@ Cupom Promocional:">
         </div>
     </div>
     <!--================End Contact Success and Error message Area =================-->
-
   
-
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script
@@ -332,6 +301,13 @@ Cupom Promocional:">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
 	$("#enviarEmail").click(function() {
+    if($("#name").val()==''||$("#name").val()==null||$("#email").val()==''||$("#email").val()==null||$("#subject").val()==''||$("#subject").val()==null||$("#mensagem").val()==''||$("#mensagem").val()==null){
+      Swal.fire({
+						icon: 'error',
+						title: 'Oops...',
+						text: 'Preencha todos os campos para enviar seu contato!',
+					})
+    }else{
 		$.ajax({
 			type: "POST",
 			url: "enviarmail.php",
@@ -349,10 +325,15 @@ Cupom Promocional:">
 						text: 'Ficamos gratos pelo seu contato, retornaremos em breve!',
 					})
 				}else{
-
+          Swal.fire({
+						icon: 'error',
+						title: 'Oops...',
+						text: 'Ocorreu um erro ao enviar o email, tente novamente!',
+					})
 				}
 			},
 		});
+    }
 	});
 </script>
 </body>
